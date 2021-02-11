@@ -1,0 +1,217 @@
+:root {
+    --menu: #64B6AC;
+    --text: #DAFFEF;
+    --hover: #8bebeb;
+    --background: #7B808E;
+    --headerbackground: #454851;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/*Navigation Settings*/
+nav {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--menu);
+    width: 100%;
+}
+.navItems {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    width: 40%;
+}
+.navItems li a, .dropdownButton{
+    color: var(--text);
+    text-align: center;
+    font-size: 20px;
+    transition: 0.6s;
+}
+.navItems li a:hover, .dropdownButton:hover{
+    color: var(--hover);
+    transition: 0.6s;
+}
+.widget{
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dropdownButton{
+    position: relative;
+    margin: auto;
+    background-color: var(--menu);
+    border: none;  
+}
+.dropdownContent{
+    position: absolute;
+    top: 35px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+.widget button:focus + .dropdownContent, .widget button:active + .dropdownContent, .dropdownContent:hover, .dropdownContent:focus{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+/*Banner Settings*/
+.banner {
+    height: 500px;
+
+    background-image: url("images/bannerImg.jpg");
+    background-position: center;    
+    background-size: cover;
+}
+.bannerText {
+    align-items: center;
+    position:absolute;
+    left: 50px;
+    top: 100px;
+}
+.bannerText h1 {
+    color: var(--menu);
+    font-size: 50px;
+}
+.bannerText h2 {
+    color: var(--text);
+    font-size: 25px;
+}
+
+/*Section Settings*/
+.header {
+    background-color: var(--headerbackground);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--menu);
+    font-size: 50px;
+}
+.text{
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text);
+    font-size: 35px;
+    width: 100%;
+}
+.textImg div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.textImg div .text{
+    width: 80%;
+}
+.sideImg{
+    align-self: center;
+    height: 100%;
+    max-width: 25%;
+    padding: 40px;
+    object-fit: cover;
+}
+.imgText div{
+    display: flex;
+    justify-content:  space-between;
+}
+.textImg div .text {
+    width: 80%;
+}
+
+.barberList {
+    list-style-type: none;
+}
+.barber{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    height: 200px;
+}
+.barberText{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.barberName{
+    color: var(--menu);
+    font-size:50px;
+}
+.bookButton {
+    background-color: var(--headerbackground);
+    border:none;
+    padding: 0px 10px;
+    border-radius: 6px;
+}
+.bookButton a {
+    color:var(--text);
+}
+.bookButton a:hover {
+    color:var(--hover);
+}  
+.profilePic{
+    height:200px;
+    width:200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 90px;
+}
+.multCalendars{
+    width: 100%;
+}
+.calendars{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width:100%;
+}
+.singleWidget{
+    width:25%;
+    height:400px;
+}
+
+/*Body Settings*/
+body {
+    background-color: var(--background);
+}
+
+/*Footer Settings*/
+footer {
+    background-color: var(--menu);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.demoText {
+    width: 400px;
+    padding: 10px;
+}
+.socialBar {
+    width: 400px;
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+.tulip a img{
+    height: 100%;
+}
+.timekit a img{
+    height: 100%;
+}

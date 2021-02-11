@@ -1,0 +1,4 @@
+bannerImg - https://www.pexels.com/photo/selective-focus-photography-of-a-barber-1453005/
+textImg - https://www.pexels.com/photo/men-s-gold-rimmed-ray-ban-aviator-sunglasses-157842/
+imgText - https://www.pexels.com/photo/shallow-focus-photo-of-barber-s-pole-3162022/
+defaultFace - https://www.pexels.com/photo/man-in-black-jacket-771742/

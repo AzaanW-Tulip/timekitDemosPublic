@@ -1,0 +1,28 @@
+.barber {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    height: 200px;
+}
+.barberText {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.barberName{
+    font-size:50px;
+}
+.barberButton {
+    border:none;
+    padding: 0px 10px;
+    border-radius: 6px;
+}
+.barberButton a {
+    text-decoration: none;
+    color:grey
+}
+.barberButton a:hover {
+    color:black;
+}  
